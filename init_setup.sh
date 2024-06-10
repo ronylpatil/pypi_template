@@ -1,9 +1,9 @@
 echo [$(date)]: "START"
-echo [$(date)]: "Creating virtual env with python 3.9"
-python -m virtualenv ./venv
+echo [$(date)]: "Create venv"
+python -m virtualenv ./<VIRTUAL ENV NAME>
 
-echo [$(date)]: "activate venv"
-source ./venv/Scripts/activate
+echo [$(date)]: "Activate venv"
+source ./<VIRTUAL ENV NAME>/Scripts/activate
 
 echo [$(date)]: "upgrading pip and setuptools"
 pip install --upgrade pip setuptools
